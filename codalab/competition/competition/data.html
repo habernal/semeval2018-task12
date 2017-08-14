@@ -1,0 +1,30 @@
+<p>There are two phases of the task: the <strong>trial</strong> phase and the <strong>test</strong> phase.</p>
+
+<p>For the <strong>trial</strong> phase, two datasets are available: <strong>training data</strong> and <strong>dev data</strong>.</p>
+
+<p>Both <strong>training data</strong> and <strong>dev data</strong> are fully labeled (all instances have an associated gold label). So while it is possible to use both datasets for training your system, we suggest to hold out the <strong>dev data</strong> for evaluation and error analysis. The scorer for the <strong>trial</strong> phase is using the <strong>dev data</strong> as well.</p>
+
+<p>For the <strong>test</strong> phase, three datasets will be available: <strong>training data</strong>, <strong>dev data</strong> (the same as above) and <strong>test data</strong>.</p>
+
+<p><strong>Test data</strong> will be released first when the <strong>test</strong> phase begins. The data also contains no gold labels, so your system has to make predictions on it.</p>
+
+<p>Notice: the split train/dev/test is exactly the same as in the <a href="https://arxiv.org/abs/1708.01425">paper</a>.</p>
+
+<p>Training and development data are available at GitHub</p>
+
+<p>
+    <a href="https://github.com/UKPLab/argument-reasoning-comprehension-task/tree/master/mturk/annotation-task/data/exported-SemEval2018-train-dev-test">
+        https://github.com/UKPLab/argument-reasoning-comprehension-task/tree/master/mturk/annotation-task/data/exported-SemEval2018-train-dev-test</a>
+
+<ul>
+    <li><samp>train-full.txt</samp> Training data (including gold labels)</li>
+    <li>
+        <samp>train-w-swap-full.txt</samp> Training data doubled with swapped ordering (including gold labels)
+    </li>
+    <li>
+        <samp>dev-only-labels.txt</samp> Evaluation data containing only gold for the trial phase (until January 8th, 2018), same as "dev" set in the paper. Against this data are all systems evaluated in the trial phase, so by uploading this file in the submission you can easily get 100% accuracy on the leaderboard :)
+    </li>
+    <li><samp>dev-only-data.txt</samp></li>
+    Evaluation data containing only arguments without gold labels. During the trial phase, you should test your models on this dataset and submit the results. Again, the IDs are the same as the dev set in the paper.
+    <li><samp>dev-full.txt</samp> Combines the two above, useful for manual analysis.</li>
+</ul>

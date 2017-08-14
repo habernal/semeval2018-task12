@@ -1,0 +1,2 @@
+command: java -jar $program/scorer-1.0-SNAPSHOT.jar -codalab $input $output
+description: Scoring program for SemEval-2018 Task 12 (The Argument Reasoning Comprehension Task)
