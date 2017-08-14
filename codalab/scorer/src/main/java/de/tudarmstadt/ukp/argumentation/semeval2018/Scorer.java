@@ -18,7 +18,6 @@
 
 package de.tudarmstadt.ukp.argumentation.semeval2018;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 
 import java.io.File;
