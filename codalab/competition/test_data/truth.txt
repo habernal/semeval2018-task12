@@ -1,2 +1,14 @@
 # test_data/truth.txt
-# empty data, not yet available
+# These are the official test data labels in the following tab-separated format:
+#
+# id	correctLabelW0orW1
+# 14666389_480_A1CF6U3GF7DZEJ	0
+# 15986315_66_A1LZPWVZRTUZD0	0
+# 16803626_23_A3PILUAB7LZGWQ	1
+# ...
+# (this example contains fake IDs and labels)
+#
+# The IDs correspond to those from data/test/test-only-data.txt
+#
+# Not publicly available until the official competition is over
+# https://github.com/habernal/semeval2018-task12/issues/2
