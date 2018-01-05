@@ -12,3 +12,5 @@ baseline-system/dependency-reduced-pom.xml
 baseline-system/target/
 codalab/scorer/dependency-reduced-pom.xml
 codalab/scorer/target/
+codalab/competition/test_data/truth_SECRET.txt
+codalab/competition/test_data/reference.zip
